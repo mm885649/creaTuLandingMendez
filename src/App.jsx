@@ -1,14 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
     <ChakraProvider>
-      <itemListContainer title="Deportem" />
-      <navBar />
+      <NavBar />
+
+      <ItemListContainer title="Tienda Deportiva Deportem" />
     </ChakraProvider>
   );
 }
